@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { CSSOMSnapshotCapture } from '../../src';
+import { CSSOMSnapshotCapture } from 'playwright-cssom-snapshot';
 
 test.describe('CSSOM Snapshot Tests', () => {
   test('capture entire page snapshot', async ({ page }) => {

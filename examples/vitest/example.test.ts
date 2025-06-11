@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { chromium } from 'playwright';
-import { CSSOMSnapshotCapture } from '../../src';
+import { CSSOMSnapshotCapture } from 'playwright-cssom-snapshot';
 
 describe('CSSOM Snapshot with Vitest', () => {
   it('should capture page styles', async () => {

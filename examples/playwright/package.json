@@ -1,12 +1,14 @@
 {
   "name": "cssom-snapshot-playwright-example",
   "version": "1.0.0",
+  "private": true,
   "description": "Example of using cssom-snapshot with Playwright",
   "scripts": {
     "test": "playwright test",
     "test:ui": "playwright test --ui"
   },
   "devDependencies": {
-    "@playwright/test": "^1.41.0"
+    "@playwright/test": "^1.41.0",
+    "playwright-cssom-snapshot": "workspace:*"
   }
 }

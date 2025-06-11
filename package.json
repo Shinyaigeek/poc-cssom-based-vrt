@@ -10,9 +10,11 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "pnpm run build",
     "lint": "eslint src/**/*.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:playwright": "pnpm --filter cssom-snapshot-playwright-example test",
+    "test:vitest": "pnpm --filter cssom-snapshot-vitest-example test"
   },
   "keywords": [
     "playwright",
@@ -35,5 +37,10 @@
   },
   "peerDependencies": {
     "playwright": "^1.0.0"
-  }
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
 }
