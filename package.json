@@ -1,12 +1,39 @@
 {
-  "name": "poc-cssom-based-vrt",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "playwright-cssom-snapshot",
+  "version": "0.1.0",
+  "description": "Capture CSSOM snapshots for visual regression testing with Playwright",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc --noEmit"
   },
-  "keywords": [],
+  "keywords": [
+    "playwright",
+    "cssom",
+    "snapshot",
+    "visual-regression",
+    "testing",
+    "css-in-js",
+    "vrt"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "playwright": "^1.41.0"
+  },
+  "peerDependencies": {
+    "playwright": "^1.0.0"
+  }
 }

@@ -1,0 +1,12 @@
+{
+  "name": "cssom-snapshot-vitest-example",
+  "version": "1.0.0",
+  "description": "Example of using cssom-snapshot with Vitest",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^1.2.0",
+    "playwright": "^1.41.0"
+  }
+}
